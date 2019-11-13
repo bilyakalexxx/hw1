@@ -17,3 +17,6 @@ def is_objects_the_same(first, second):
     print (first == second)
 
 is_objects_the_same (2,1)
+
+
+# no bez returna tozhe robe
