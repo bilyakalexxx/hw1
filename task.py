@@ -17,7 +17,7 @@ def is_objects_same_type(first, second):
 
 def is_objects_the_same(first, second):
 
-    
+    return (first is second)
     """
     If @first and @second are same objects should return True
     In another case should return False
@@ -81,17 +81,22 @@ def is_word_in_text(word, text):
         >>> False
     """
 
-
     pass
 
 def some_loop_exercise():
+
+#     for i in range(0,12):
+#         i.remove(6,7)
+#     return 
+
+    
     """
     Use loop to create list that contain int values from 0 to 12 except 6 and 7
     """
 
     pass
 
-# data = [1, 5, -7, 8, -1]
+
 
 def remove_from_list_all_negative_numbers(data):
     """
@@ -102,39 +107,28 @@ def remove_from_list_all_negative_numbers(data):
         remove_from_list_all_negative_numbers([1, 5, -7, 8, -1])
         >>> [1, 5, 8]
     """
-    
-#     for i in data:
-#         if i >= 0:
-#             data.remove(i)
-# print(remove_from_list_all_negative_numbers(data))
 
-
-           
-
-    
-    
-    
     pass
 
-# def alphabet():
-#     """
-#     Create dict which keys is alphabetic characters. And values their number in alphabet
-#     Notes You could see an implementaion of this one in test, but create another one
-#     Examples:
-#         alphabet()
-#         >>> {1: "a", 2: "b" ...}
-#     """
+def alphabet():
+    """
+    Create dict which keys is alphabetic characters. And values their number in alphabet
+    Notes You could see an implementaion of this one in test, but create another one
+    Examples:
+        alphabet()
+        >>> {1: "a", 2: "b" ...}
+    """
 
-#     pass
+    pass
 
 
-# def simple_sort(data):
-#     """
-#     Sort list of ints without using built-in methods.
-#     Examples:
-#         simple_sort([2, 9, 6, 7, 3, 2, 1])
-#         >>> [1, 2, 2, 3, 6, 7, 9]
-#     Returns:
-#     """
+def simple_sort(data):
+    """
+    Sort list of ints without using built-in methods.
+    Examples:
+        simple_sort([2, 9, 6, 7, 3, 2, 1])
+        >>> [1, 2, 2, 3, 6, 7, 9]
+    Returns:
+    """
 
-#     pass
+    pass
