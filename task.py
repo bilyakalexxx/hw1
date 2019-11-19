@@ -23,78 +23,49 @@ def is_objects_the_same(first, second):
     In another case should return False
     """
 
-    pass
+    # pass
 
 def multiple_ints(first_value, second_value):
-    """
-    Should calculate product of all args.
-    if first_value or second_value is not int should raise ValueError
-    Raises:
-        ValueError
-    Params:
-        first_value: value for multiply
-        second_value
-    Returns:
-        Product of elements
-    """
 
-    pass
+    if any([not isinstance(first_value, int),not isinstance(second_value, int)]):
+        raise ValueError
+    else:
+        return first_value * second_value
 
 
 def multiple_ints_with_conversion(first_value, second_value):
-    """
-    If possible to convert arguments to int value - convert and multiply them.
-    If it is impossible raise ValueError
-    Args:
-        first_value: number for multiply
-        second_value: number for multiply
-    Raises:
-        ValueError
-    Returns: multiple of two numbers.
-    Examples:
-        multiple_ints_with_conversion(6, 6)
-        >>> 36
-        multiple_ints_with_conversion(2, 2.0)
-        >>> 4
-        multiple_ints_with_conversion("12", 1)
-        >>> 12
-        try:
-            multiple_ints_with_conversion("Hello", 2)
-        except ValueError:
-            print("Not valid input data")
-        >>> "Not valid input data"
-    """
-
-    pass
+    
+    try:
+        if not isinstance(first_value, int):
+            first_value = int(first_value)
+        if not isinstance(second_value, int):
+            second_value = int(second_value)
+        return multiple_ints(first_value, second_value)
+    except ValueError:
+        print("Not valid input data")
 
 def is_word_in_text(word, text):
-    """
-    If text contain word return True
-    In another case return False.
-    Args:
-        word: Searchable substring
-        text: Text for searching
-    Examples:
-        is_word_in_text("Hello", "Hello word")
-        >>> True
-        is_word_in_text("Glad", "Nice to meet you ")
-        >>> False
-    """
+    
+    if word in text:
+        return True
+    else:
+        return False
 
-    pass
 
 def some_loop_exercise():
 
-#     for i in range(0,12):
-#         i.remove(6,7)
-#     return 
+    for x in range(0,12):
+        print (x)
+    return 
+
+print (some_loop_exercise())
 
     
-    """
-    Use loop to create list that contain int values from 0 to 12 except 6 and 7
-    """
+    # """
+    # Use loop to create list that contain int values from 0 to 12 except 6 and 7
+    # """
 
-    pass
+    # pass
 
 
 
