@@ -18,10 +18,10 @@ def is_objects_same_type(first, second):
 def is_objects_the_same(first, second):
 
     return (first is second)
-    """
-    If @first and @second are same objects should return True
-    In another case should return False
-    """
+    # """
+    # If @first and @second are same objects should return True
+    # In another case should return False
+    # """
 
     # pass
 
