@@ -1,7 +1,9 @@
 """
 This is a list of functions that should be completed.
 """
-
+"""
+ this is a text
+"""
 def have_objects_same_value(first, second):
 
     return (first == second)
